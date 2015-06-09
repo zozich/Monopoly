@@ -13,7 +13,9 @@ public class HappyBirthdayCard extends Card {
   @Override
   public void executeAction(Game game, User user) {
     for (User allUsers : game.getUsers()) {
-
+      if (allUsers != user) {
+        // transfer some money
+      }
     }
   }
 }
