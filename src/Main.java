@@ -13,7 +13,7 @@ public class Main {
     User user1 = new User("Vasya");
     User user2 = new User("Petya");
     User user3 = new User("Kolya");
-    List<User> users = new ArrayList<>();
+    List<User> users = new ArrayList<User>();
     Collections.addAll(users, user1, user2, user3);
 
     //create new game

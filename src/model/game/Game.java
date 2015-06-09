@@ -26,27 +26,21 @@ public class Game {
   public GameField getGameField() {
     return gameField;
   }
-
   public Deck getChests() {
     return chests;
   }
-
   public Deck getChance() {
     return chance;
   }
-
   public User getWinner() {
     return winner;
   }
-
   public Dice getDice1() {
     return dice1;
   }
-
   public Dice getDice2() {
     return dice2;
   }
-
   public List<User> getUsers() {
     return users;
   }

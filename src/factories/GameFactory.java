@@ -55,8 +55,9 @@ public abstract class GameFactory {
     Location location10 = new CardHolder(chests);
 
     GameField field = new GameField();
-    field.addAllLocations(location0, location1, location2, location3, location4, location5, location6,
-            location7, location8, location9, location10);
+    field.addAllLocations(location0, location1, location2, location3, location4, location5);
+    field.addJail(location6);
+    field.addAllLocations(location7, location8, location9, location10);
     return field;
   }
 
