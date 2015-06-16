@@ -1,4 +1,4 @@
-package states;
+package model.states;
 
 import model.game.Game;
 import model.game.User;

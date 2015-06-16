@@ -1,5 +1,7 @@
 package factories;
 
+import user_interface.ConsoleUserInterface;
+import user_interface.UserInterface;
 import model.cards.chance.AdditionalMoveCard;
 import model.cards.chance.HappyBirthdayCard;
 import model.cards.chance.LoseMoneyCard;
@@ -29,7 +31,9 @@ public abstract class GameFactory {
     GameField testField = initSimpleGameField();
     Dice dice1 = getClassicDice();
     Dice dice2 = getClassicDice();
-    return new Game(users, testField, chests, chance, dice1, dice2);
+
+    UserInterface userInterface = new ConsoleUserInterface();
+    return new Game(users, testField, chests, chance, dice1, dice2, userInterface);
   }
 
   public static GameField initSimpleGameField() {

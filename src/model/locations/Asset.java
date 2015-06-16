@@ -49,9 +49,12 @@ public class Asset implements Location {
   @Override
   public void executeAction(Game game, User user) {
     if (owner == null) {
-      // user can buy
+      String message = "Do you wish to buy " + name + "?";
+      String[] options = {"Buy this location", "Do not buy this location"};
+      String answer = game.getUserInterface().getInputFromUser(user, message, options);
+      // execute action depending on the user's answer
     } else if (user == owner) {
-      // owner can upgrade
+      // owner can upgrade - get input from user
     } else {
       // pay fine depending on the level of the asset
       if (street.isOneOwner(owner)) {

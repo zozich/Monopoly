@@ -1,7 +1,7 @@
 package model.game;
 
-import states.State;
-import states.StatePlaying;
+import model.states.State;
+import model.states.StatePlaying;
 
 public class User {
 
@@ -44,5 +44,10 @@ public class User {
 
   public void doMove(Game game, int dice1result, int dice2result) {
     state.doMove(game, this, dice1result, dice2result);
+  }
+
+  public void endMove(Game game) {
+    // if user presses Okay - then:
+    game.nextMove();
   }
 }

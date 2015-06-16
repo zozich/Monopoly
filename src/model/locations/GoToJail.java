@@ -2,7 +2,7 @@ package model.locations;
 
 import model.game.Game;
 import model.game.User;
-import states.StateInJail;
+import model.states.StateInJail;
 
 public class GoToJail implements Location {
 
